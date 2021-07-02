@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "gh-pages": "^3.2.3",
     "node-sass": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -47,5 +46,13 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://331leo.github.io"
+  "homepage": "https://331leo.github.io",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.3.2"
+  }
 }
