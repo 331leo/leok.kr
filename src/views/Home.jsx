@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Link } from "react-router-dom";
-import Home from "../../components/Home";
-import About from "../../components/About";
-import Portfolio from "../../components/Portfolio";
-import News from "../../components/News";
-import Contact from "../../components/Contact";
+import Home from "../components/Home";
+import About from "../components/About";
+import Portfolio from "../components/Portfolio";
+import News from "../components/News";
+import Contact from "../components/Contact";
 
-const HomeLight = () => {
+const HomeViews = () => {
   function changeColorMode(isDark) {
     if (isDark) document.body.classList.add("dark");
     else document.body.classList.remove("dark");
@@ -144,4 +144,4 @@ const HomeLight = () => {
   );
 };
 
-export default HomeLight;
+export default HomeViews;
