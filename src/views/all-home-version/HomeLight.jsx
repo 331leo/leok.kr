@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Link } from "react-router-dom";
 import Home from "../../components/Home";
@@ -8,6 +8,23 @@ import News from "../../components/News";
 import Contact from "../../components/Contact";
 
 const HomeLight = () => {
+  function changeColorMode(isDark) {
+    if (isDark) document.body.classList.add("dark");
+    else document.body.classList.remove("dark");
+  }
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    changeColorMode(true);
+  }
+
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (e) => {
+      changeColorMode(e.matches ? true : false);
+    });
+
   return (
     <>
       <Tabs>
@@ -70,13 +87,13 @@ const HomeLight = () => {
 
               <div className="copyright">
                 <p>
-                  &copy; {new Date().getFullYear()} Tokyo <br /> Created by 
+                  &copy; {new Date().getFullYear()} Tokyo <br /> Created by
                   <a
                     href="https://themeforest.net/user/ib-themes"
                     target="_blank"
                     rel="noreferrer"
                   >
-                  Ib-Themes
+                    Ib-Themes
                   </a>
                 </p>
               </div>
