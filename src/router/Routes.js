@@ -1,8 +1,7 @@
-import React from "react";
-import Preview from "../views/Preview";
-import HomeViews from "../views/Home";
-import NotFound from "../views/NotFound";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from 'react';
+import HomeViews from '../views/Home';
+import NotFound from '../views/NotFound';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const Routes = () => {
   return (
