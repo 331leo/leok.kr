@@ -7,24 +7,7 @@ import Portfolio from '../components/Portfolio';
 import News from '../components/News';
 import Contact from '../components/Contact';
 
-const HomeViews = () => {
-  function changeColorMode(isDark) {
-    if (isDark) document.body.classList.add('dark');
-    else document.body.classList.remove('dark');
-  }
-  if (
-    window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches
-  ) {
-    changeColorMode(true);
-  }
-
-  window
-    .matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change', (e) => {
-      changeColorMode(!!e.matches);
-    });
-
+const HomeView = () => {
   return (
     <>
       <Tabs>
@@ -144,4 +127,4 @@ const HomeViews = () => {
   );
 };
 
-export default HomeViews;
+export default HomeView;

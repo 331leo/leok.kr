@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomeViews from '../views/Home';
+import HomeView from '../views/Home';
 import NotFound from '../views/NotFound';
-
+import DarkModeController from '../utils/darkmode';
 const Routes = () => {
   return (
     <>
-      <Router>
+      <DarkModeController />
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           {/* <Route exact path="/" component={Preview} /> */}
-          <Route exact path="/" component={HomeViews} />
+          <Route exact path="/" component={HomeView} />
           <Route component={NotFound} />
         </Switch>
       </Router>
