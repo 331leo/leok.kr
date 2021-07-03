@@ -14,14 +14,8 @@ const NotFound = () => {
           {/* END LOGO */}
           <div className="copyright">
             <p>
-              &copy; 2021 Tokyo <br /> Created by
-              <a
-                href="https://themeforest.net/user/ib-themes"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Ib-Themes
-              </a>
+              &copy; {new Date().getFullYear()} Leo Kim <br /> All Rights
+              reserved
             </p>
           </div>
           {/* END COPYRIGHT */}
@@ -36,10 +30,10 @@ const NotFound = () => {
               <div className="tokyo_tm_error">
                 <div className="tokyo_tm_error_inner">
                   <h1>404!</h1>
-                  <h3>Page not found</h3>
-                  <p>The page you were looking for could not be found.</p>
+                  <h3>Not Found</h3>
+                  <p>이 페이지는 존재하지 않습니다. 홈으로 돌아가 주세요</p>
                   <Link to="/" className="ib-button">
-                    Go to Home
+                    Go Back to home
                   </Link>
                 </div>
               </div>

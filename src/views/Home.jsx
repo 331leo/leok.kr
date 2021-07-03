@@ -32,6 +32,7 @@ const HomeView = () => {
                     />
                     <span className="menu_content">Home</span>
                   </Tab>
+
                   <Tab>
                     <img
                       className="svg"
@@ -40,6 +41,7 @@ const HomeView = () => {
                     />
                     <span className="menu_content">About</span>
                   </Tab>
+                  {/*
                   <Tab>
                     <img
                       className="svg"
@@ -64,20 +66,14 @@ const HomeView = () => {
                     />
                     <span className="menu_content"> Contact</span>
                   </Tab>
+                  */}
                 </ul>
               </div>
               {/* END MENU */}
 
               <div className="copyright">
                 <p>
-                  &copy; {new Date().getFullYear()} Tokyo <br /> Created by
-                  <a
-                    href="https://themeforest.net/user/ib-themes"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ib-Themes
-                  </a>
+                  &copy; {new Date().getFullYear()} Leo Kim <br />
                 </p>
               </div>
               {/* END COPYRIGHT */}
