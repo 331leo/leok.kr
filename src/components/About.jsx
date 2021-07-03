@@ -1,14 +1,5 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
-Modal.setAppElement('#root');
-
+import React from 'react';
 const About = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function toggleModal() {
-    setIsOpen(!isOpen);
-  }
-
   return (
     <>
       <div className="tokyo_tm_about">
