@@ -18,6 +18,10 @@ const SocialShare = [
     iconName: 'idcard',
     link: 'http://rocketpunch.com/@331leo',
   },
+  {
+    iconName: 'email',
+    link: 'mailto:me@leok.kr',
+  },
 ];
 const Social = () => {
   return (
