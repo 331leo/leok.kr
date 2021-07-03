@@ -6,7 +6,7 @@ const Home = () => {
   React.useEffect(async () => {
     setProfileUrl(
       await axios(
-        `https://graph.facebook.com/v11.0/768809940421370/picture?redirect=0&type=large`
+        `https://graph.facebook.com/v11.0/768809940421370/picture?redirect=0&height=5000&width=5000`
       ).then((response) => {
         const data = response.data;
         return data.data.url;
