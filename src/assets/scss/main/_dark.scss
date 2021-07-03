@@ -37,7 +37,7 @@ body.dark #preloader:after {
   background-color: #fff;
 }
 body.dark .loader_line:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 50%;
@@ -53,7 +53,7 @@ body.dark .loader_line:before {
   animation: lineheight 1000ms ease-in-out 0s forwards;
 }
 body.dark .loader_line:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -114,11 +114,12 @@ body.dark .tokyo_tm_home .social li a {
     filter: invert(0.8);
   }
 }
-body.dark .tokyo_tm_all_wrap .leftpart img {
-  filter: invert(0);
+body.dark .tokyo_tm_all_wrap .leftpart .menu img {
+  filter: invert(1) !important;
 }
+
 body.dark .tokyo_tm_home .avatar .image {
-  background-image: url(../../1.jpg) !important;
+  background-image: none;
 }
 body.dark .cursor-inner {
   margin-left: -3px;
