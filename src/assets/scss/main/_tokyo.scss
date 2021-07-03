@@ -1901,10 +1901,10 @@ body.modal {
   }
 }
 .tab {
-  margin-left: 2em;
+  margin-left: 2rem;
 }
 .tabtab {
-  margin-left: 2em;
+  margin-left: 2rem;
 }
 .tab a {
   color: inherit;
@@ -1912,4 +1912,7 @@ body.modal {
 }
 .tab a:hover {
   filter: opacity(0.7);
+}
+.tokyo_tm_about .description .category {
+  margin-bottom: 1rem;
 }
