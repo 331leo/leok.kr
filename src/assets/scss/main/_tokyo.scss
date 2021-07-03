@@ -26,7 +26,7 @@ html {
   margin: 0px;
 }
 body {
-  font-family: "Mulish";
+  font-family: 'Mulish';
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.5px;
@@ -92,7 +92,7 @@ h5,
 h6 {
   font-weight: 500;
   line-height: 1.2;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   color: #000;
 }
 
@@ -140,7 +140,7 @@ h6 {
 }
 #preloader:before,
 #preloader:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -167,7 +167,7 @@ h6 {
   transition: all 0.8s ease 0s;
 }
 .loader_line:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 50%;
@@ -183,7 +183,7 @@ h6 {
   animation: lineheight 1000ms ease-in-out 0s forwards;
 }
 .loader_line:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -287,7 +287,7 @@ h6 {
   color: #767676;
   display: inline-block;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   transition: all 0.3s ease;
   cursor: pointer;
   .svg {
@@ -309,7 +309,7 @@ h6 {
 .tokyo_tm_all_wrap .leftpart .copyright p {
   font-size: 15px;
   color: #999;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   line-height: 25px;
   font-style: italic;
 }
@@ -473,7 +473,7 @@ h6 {
   margin-bottom: 19px;
 }
 .tokyo_tm_home .details .job {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: italic;
   font-weight: 500;
   max-width: 450px;
@@ -550,7 +550,6 @@ h6 {
 }
 .tokyo_tm_about .description .left p {
   margin-bottom: 35px;
-  font-style: italic;
 }
 .tokyo_tm_about .description .name {
   font-weight: 700;
@@ -826,7 +825,7 @@ h6 {
 }
 .tokyo_tm_title h3 {
   font-weight: 800;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 .tokyo_tm_title span {
   display: inline-block;
@@ -836,7 +835,7 @@ h6 {
   font-weight: 600;
   font-size: 12px;
   color: #333;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   letter-spacing: 0px;
   margin-bottom: 15px;
 }
@@ -858,7 +857,7 @@ h6 {
   color: #767676;
   display: inline-block;
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   transition: all 0.3s ease;
   cursor: pointer;
   @media screen and (max-width: 767px) {
@@ -968,7 +967,7 @@ ul.react-tabs__tab-list {
   background: #ffffff;
   font-size: 18px;
   padding: 5px 15px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   color: #000;
   position: fixed;
@@ -986,7 +985,7 @@ ul.react-tabs__tab-list {
   top: 100%;
   left: 0;
   margin-top: -10px;
-  font-family: "Mulish";
+  font-family: 'Mulish';
   font-weight: 500;
   padding: 5px 15px;
   color: #767676;
@@ -1105,7 +1104,7 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_read_more a:before {
   position: absolute;
-  content: "";
+  content: '';
   background-color: #000;
   margin: auto;
   width: 100%;
@@ -1168,7 +1167,7 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_news ul li .details .date {
   text-transform: capitalize;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 13px;
   color: #767676;
   font-style: italic;
@@ -1190,7 +1189,7 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_news ul li .details .date span:before {
   position: absolute;
-  content: "";
+  content: '';
   margin-top: 1px;
   top: 50%;
   transform: translateY(-50%) rotate(15deg);
@@ -1311,7 +1310,7 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_modalbox_news .date {
   text-transform: uppercase;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 12px;
   color: #767676;
   font-style: italic;
@@ -1335,7 +1334,7 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_modalbox_news .date span:before {
   position: absolute;
-  content: "";
+  content: '';
   margin-top: 0px;
   top: 50%;
   transform: translateY(-50%) rotate(15deg);
@@ -1405,7 +1404,7 @@ body.modal {
   align-items: center;
 }
 .tokyo_tm_modalbox_news .news_share span {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   font-style: italic;
   padding-right: 20px;
@@ -1515,7 +1514,7 @@ body.modal {
 /*	9) TOKYO MAGIC CURSOR
 /*---------------------------------------------------*/
 
-.tokyo_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor {
+.tokyo_tm_all_wrap[data-magic-cursor='hide'] .mouse-cursor {
   display: none;
 }
 .mouse-cursor {

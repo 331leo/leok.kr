@@ -33,7 +33,7 @@ const NotFound = () => {
                   <h3>Not Found</h3>
                   <p>이 페이지는 존재하지 않습니다. 홈으로 돌아가 주세요</p>
                   <Link to="/" className="ib-button">
-                    Go Back to home
+                    홈으로 돌아가기
                   </Link>
                 </div>
               </div>
@@ -46,14 +46,7 @@ const NotFound = () => {
       <footer className="footer-wrapper">
         <div className="copyright">
           <p>
-            &copy; 2021 Tokyo Created by
-            <a
-              href="https://themeforest.net/user/ib-themes"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Ib-Themes
-            </a>
+            &copy; {new Date().getFullYear()} Leo Kim <br />
           </p>
         </div>
         {/* END COPYRIGHT */}

@@ -14,32 +14,30 @@ const About = () => {
   return (
     <>
       <div className="tokyo_tm_about">
+        {/*
         <div className="about_image">
           <img src="assets/img/slider/1.jpg" alt="about" />
-        </div>
+        </div>*/}
         {/* END ABOUT IMAGE */}
         <div className="description">
-          <h3 className="name">Adriano Smith &amp; Photographer</h3>
+          <h3 className="name">Leo Kim | Student & Developer</h3>
           <div className="description_inner">
             <div className="left">
-              <p>
-                Hello, I am a creative photographer based in New York and happy
-                to travel all over Europe to capture your big day in candid and
-                authentic photos. I will create a lasting memory of the people.
-              </p>
-              <div className="tokyo_tm_button">
+              <p>안녕하세요!</p>
+              {/*<div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">
                   Read More
                 </button>
-              </div>
+      </div>*/}
               {/* END TOKYO BUTTON */}
             </div>
             {/* END LEFT */}
+            {/*}
             <div className="right">
               <ul>
                 <li>
                   <p>
-                    <span>Birthday:</span>01.07.1990
+                    <span>Birthday:</span>3.31.2005
                   </p>
                 </li>
                 <li>
@@ -55,13 +53,13 @@ const About = () => {
                 <li>
                   <p>
                     <span>Email:</span>
-                    <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                    <a href="mailto:me@leok.kr">me@leok.kr</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <span>Phone:</span>
-                    <a href="tel:+770221770505">+77 022 177 05 05</a>
+                    <a href="tel:+770221770505">+82 0505 177 05 05</a>
                   </p>
                 </li>
                 <li>
@@ -75,8 +73,8 @@ const About = () => {
                   </p>
                 </li>
               </ul>
-              {/* END UL */}
-            </div>
+              {/* END UL *
+            </div>*/}
             {/* END RIGHT */}
           </div>
           {/* END DESCRIPTION INNER */}
