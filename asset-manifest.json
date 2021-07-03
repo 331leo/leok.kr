@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.159ba537.chunk.css",
-    "main.js": "/static/js/main.42b0670b.chunk.js",
-    "main.js.map": "/static/js/main.42b0670b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.95591003.js",
-    "runtime-main.js.map": "/static/js/runtime-main.95591003.js.map",
-    "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
-    "static/js/2.cfc62e31.chunk.js": "/static/js/2.cfc62e31.chunk.js",
-    "static/js/2.cfc62e31.chunk.js.map": "/static/js/2.cfc62e31.chunk.js.map",
-    "static/js/3.0f136334.chunk.js": "/static/js/3.0f136334.chunk.js",
-    "static/js/3.0f136334.chunk.js.map": "/static/js/3.0f136334.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.19627560.chunk.css.map": "/static/css/2.19627560.chunk.css.map",
-    "static/css/main.159ba537.chunk.css.map": "/static/css/main.159ba537.chunk.css.map",
-    "static/js/2.cfc62e31.chunk.js.LICENSE.txt": "/static/js/2.cfc62e31.chunk.js.LICENSE.txt",
-    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf"
+    "main.css": "/leok.kr/static/css/main.3d61c341.chunk.css",
+    "main.js": "/leok.kr/static/js/main.573aa248.chunk.js",
+    "main.js.map": "/leok.kr/static/js/main.573aa248.chunk.js.map",
+    "runtime-main.js": "/leok.kr/static/js/runtime-main.8f6d5e3f.js",
+    "runtime-main.js.map": "/leok.kr/static/js/runtime-main.8f6d5e3f.js.map",
+    "static/css/2.8eff8114.chunk.css": "/leok.kr/static/css/2.8eff8114.chunk.css",
+    "static/js/2.cec2cbc7.chunk.js": "/leok.kr/static/js/2.cec2cbc7.chunk.js",
+    "static/js/2.cec2cbc7.chunk.js.map": "/leok.kr/static/js/2.cec2cbc7.chunk.js.map",
+    "static/js/3.f28f7edd.chunk.js": "/leok.kr/static/js/3.f28f7edd.chunk.js",
+    "static/js/3.f28f7edd.chunk.js.map": "/leok.kr/static/js/3.f28f7edd.chunk.js.map",
+    "index.html": "/leok.kr/index.html",
+    "static/css/2.8eff8114.chunk.css.map": "/leok.kr/static/css/2.8eff8114.chunk.css.map",
+    "static/css/main.3d61c341.chunk.css.map": "/leok.kr/static/css/main.3d61c341.chunk.css.map",
+    "static/js/2.cec2cbc7.chunk.js.LICENSE.txt": "/leok.kr/static/js/2.cec2cbc7.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/leok.kr/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.95591003.js",
-    "static/css/2.19627560.chunk.css",
-    "static/js/2.cfc62e31.chunk.js",
-    "static/css/main.159ba537.chunk.css",
-    "static/js/main.42b0670b.chunk.js"
+    "static/js/runtime-main.8f6d5e3f.js",
+    "static/css/2.8eff8114.chunk.css",
+    "static/js/2.cec2cbc7.chunk.js",
+    "static/css/main.3d61c341.chunk.css",
+    "static/js/main.573aa248.chunk.js"
   ]
 }
