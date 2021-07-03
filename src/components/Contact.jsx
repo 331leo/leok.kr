@@ -1,7 +1,7 @@
-import React from "react";
-import { useState } from "react";
-import ReactMapGL from "react-map-gl";
-import { useForm } from "react-hook-form";
+import React, { useState } from 'react';
+
+import ReactMapGL from 'react-map-gl';
+import { useForm } from 'react-hook-form';
 
 const Contact = () => {
   const {
@@ -12,7 +12,7 @@ const Contact = () => {
 
   const onSubmit = (data, e) => {
     e.target.reset();
-    console.log("Message submited: " + JSON.stringify(data));
+    console.log(`Message submited: ${JSON.stringify(data)}`);
   };
 
   const [viewport, setViewport] = useState({
@@ -37,7 +37,7 @@ const Contact = () => {
         <div className="map_wrap">
           <div className="map">
             <ReactMapGL
-              mapStyle={"mapbox://style/mapbox/dark-v9"}
+              mapStyle="mapbox://style/mapbox/dark-v9"
               mapboxApiAccessToken="pk.eyJ1IjoiYmF5YXppZGgiLCJhIjoiY2tvemdwc3ByMDg1YzJubzQxcDR0cDR3dyJ9.s1zXEb5OPqgBDcmupj3GBA"
               {...viewport}
               onViewportChange={(nextViewport) => setViewport(nextViewport)}
@@ -52,11 +52,11 @@ const Contact = () => {
               <ul>
                 <li>
                   <input
-                    {...register("name", { required: true })}
+                    {...register('name', { required: true })}
                     type="text"
                     placeholder="Name"
                   />
-                  {errors.name && errors.name.type === "required" && (
+                  {errors.name && errors.name.type === 'required' && (
                     <span>Name is required</span>
                   )}
                 </li>
@@ -65,12 +65,12 @@ const Contact = () => {
                 <li>
                   <input
                     {...register(
-                      "email",
+                      'email',
                       {
-                        required: "Email is Required",
+                        required: 'Email is Required',
                         pattern: {
                           value: /\S+@\S+\.\S+/,
-                          message: "Entered value does not match email format",
+                          message: 'Entered value does not match email format',
                         },
                       },
                       { required: true }
@@ -86,9 +86,9 @@ const Contact = () => {
 
                 <li>
                   <textarea
-                    {...register("subject", { required: true })}
+                    {...register('subject', { required: true })}
                     placeholder="Message"
-                  ></textarea>
+                  />
                   {errors.subject && <span>Subject is required.</span>}
                 </li>
                 {/* END SUBJECT MESSAGE */}

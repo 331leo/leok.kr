@@ -6,9 +6,9 @@ env:
   node: true
 
 extends:
-  - plugin:prettier/recommended
+  - airbnb
   - eslint:recommended
-  - plugin:react/recommended
+  - plugin:prettier/recommended
 
 parser: 'babel-eslint'
 parserOptions:
@@ -16,6 +16,11 @@ parserOptions:
   ecmaFeatures:
     modules: true
     jsx: true
+
 plugins:
   - prettier
   - react
+
+settings:
+  react:
+    version: 'detect'

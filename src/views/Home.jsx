@@ -1,28 +1,28 @@
-import React, { useState, useEffect } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { Link } from "react-router-dom";
-import Home from "../components/Home";
-import About from "../components/About";
-import Portfolio from "../components/Portfolio";
-import News from "../components/News";
-import Contact from "../components/Contact";
+import React, { useState, useEffect } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Link } from 'react-router-dom';
+import Home from '../components/Home';
+import About from '../components/About';
+import Portfolio from '../components/Portfolio';
+import News from '../components/News';
+import Contact from '../components/Contact';
 
 const HomeViews = () => {
   function changeColorMode(isDark) {
-    if (isDark) document.body.classList.add("dark");
-    else document.body.classList.remove("dark");
+    if (isDark) document.body.classList.add('dark');
+    else document.body.classList.remove('dark');
   }
   if (
     window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
+    window.matchMedia('(prefers-color-scheme: dark)').matches
   ) {
     changeColorMode(true);
   }
 
   window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) => {
-      changeColorMode(e.matches ? true : false);
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', (e) => {
+      changeColorMode(!!e.matches);
     });
 
   return (

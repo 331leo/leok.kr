@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-import Brand from "./Brand";
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import Brand from './Brand';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -114,7 +114,7 @@ const About = () => {
                       </span>
                       <div className="background">
                         <div className="bar">
-                          <div className="bar_in" style={{width: 95 + '%'}}></div>
+                          <div className="bar_in" style={{ width: `${95}%` }} />
                         </div>
                       </div>
                     </div>
@@ -126,7 +126,7 @@ const About = () => {
                       </span>
                       <div className="background">
                         <div className="bar">
-                        <div className="bar_in" style={{width: 80 + '%'}}></div>
+                          <div className="bar_in" style={{ width: `${80}%` }} />
                         </div>
                       </div>
                     </div>
@@ -138,7 +138,7 @@ const About = () => {
                       </span>
                       <div className="background">
                         <div className="bar">
-                        <div className="bar_in" style={{width: 90 + '%'}}></div>
+                          <div className="bar_in" style={{ width: `${90}%` }} />
                         </div>
                       </div>
                     </div>
@@ -160,7 +160,7 @@ const About = () => {
                       </span>
                       <div className="background">
                         <div className="bar">
-                        <div className="bar_in" style={{width: 95 + '%'}}></div>
+                          <div className="bar_in" style={{ width: `${95}%` }} />
                         </div>
                       </div>
                     </div>
@@ -172,7 +172,7 @@ const About = () => {
                       </span>
                       <div className="background">
                         <div className="bar">
-                        <div className="bar_in" style={{width: 90 + '%'}}></div>
+                          <div className="bar_in" style={{ width: `${90}%` }} />
                         </div>
                       </div>
                     </div>
@@ -184,7 +184,7 @@ const About = () => {
                       </span>
                       <div className="background">
                         <div className="bar">
-                        <div className="bar_in" style={{width: 85 + '%'}}></div>
+                          <div className="bar_in" style={{ width: `${85}%` }} />
                         </div>
                       </div>
                     </div>

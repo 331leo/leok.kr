@@ -1,7 +1,6 @@
-import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import SimpleReactLightbox from "simple-react-lightbox";
-import { SRLWrapper } from "simple-react-lightbox";
+import React from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 
 const Portfolio = () => {
   return (

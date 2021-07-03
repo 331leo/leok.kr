@@ -1,19 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Preview = () => {
-  document.body.classList.remove("dark");
+  document.body.classList.remove('dark');
   return (
     <div className="tokyo_tm_all_wrap">
       <div className="tokyo_tm_intro">
         <div className="tokyo_tm_intro_fixed_price">
-          <span className="anim"></span>
-          <span className="anim"></span>
-          <span className="anim"></span>
+          <span className="anim" />
+          <span className="anim" />
+          <span className="anim" />
           <a
             href="https://themeforest.net/item/tokyo-react-personal-portfolio-template/32322644?s_rank=1"
             target="_blank"
             className="pricing-info anim"
+            rel="noreferrer"
           >
             -78%
           </a>
@@ -26,9 +27,9 @@ const Preview = () => {
         </div>
         {/* END SHORT INFO */}
 
-        <span className="intro_line"></span>
-        <span className="intro_line_2"></span>
-        <span className="intro_line_3"></span>
+        <span className="intro_line" />
+        <span className="intro_line_2" />
+        <span className="intro_line_3" />
         {/* END VERTICAL LINE */}
 
         <div className="demos">

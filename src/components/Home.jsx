@@ -1,5 +1,5 @@
-import React from "react";
-import Social from "./Social";
+import React from 'react';
+import Social from './Social';
 
 const Home = () => {
   return (
@@ -10,9 +10,9 @@ const Home = () => {
             <div
               className="image avatar_img"
               style={{
-                backgroundImage: "url(assets/img/slider/1.jpg)",
+                backgroundImage: 'url(assets/img/slider/1.jpg)',
               }}
-            ></div>
+            />
             {/* END AVATAR IMAGE */}
           </div>
           {/* END AVATAR */}

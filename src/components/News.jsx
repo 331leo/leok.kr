@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-import Social from "./Social";
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import Social from './Social';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 
 const News = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,9 +44,9 @@ const News = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage: "url(assets/img/news/1.jpg)",
+                    backgroundImage: 'url(assets/img/news/1.jpg)',
                   }}
-                ></div>
+                />
               </div>
               {/* END IMAGE */}
               <div className="details">
@@ -91,14 +91,14 @@ const News = () => {
                         <div
                           className="main"
                           style={{
-                            backgroundImage: "url(assets/img/news/1.jpg)",
+                            backgroundImage: 'url(assets/img/news/1.jpg)',
                           }}
-                        ></div>
+                        />
                       </div>
                       {/* END IMAGE */}
                       <div className="details">
                         <div className="extra">
-                        <p className="date">
+                          <p className="date">
                             By <a href="#">Alex Watson</a>
                             <span>05 April 2021</span>
                           </p>
@@ -197,9 +197,9 @@ const News = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage: "url(assets/img/news/2.jpg)",
+                    backgroundImage: 'url(assets/img/news/2.jpg)',
                   }}
-                ></div>
+                />
               </div>
               {/* END IMAGE */}
 
@@ -243,9 +243,9 @@ const News = () => {
                         <div
                           className="main"
                           style={{
-                            backgroundImage: "url(assets/img/news/2.jpg)",
+                            backgroundImage: 'url(assets/img/news/2.jpg)',
                           }}
-                        ></div>
+                        />
                       </div>
                       {/* END IMAGE */}
                       <div className="details">
@@ -348,9 +348,9 @@ const News = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage: "url(assets/img/news/3.jpg)",
+                    backgroundImage: 'url(assets/img/news/3.jpg)',
                   }}
-                ></div>
+                />
               </div>
               {/* END IMAGE */}
 
@@ -393,9 +393,9 @@ const News = () => {
                         <div
                           className="main"
                           style={{
-                            backgroundImage: "url(assets/img/news/3.jpg)",
+                            backgroundImage: 'url(assets/img/news/3.jpg)',
                           }}
-                        ></div>
+                        />
                       </div>
                       <div className="details">
                         <div className="extra">
@@ -493,9 +493,9 @@ const News = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage: "url(assets/img/news/4.jpg)",
+                    backgroundImage: 'url(assets/img/news/4.jpg)',
                   }}
-                ></div>
+                />
               </div>
               {/* END IMAGE */}
 
@@ -538,9 +538,9 @@ const News = () => {
                         <div
                           className="main"
                           style={{
-                            backgroundImage: "url(assets/img/news/4.jpg)",
+                            backgroundImage: 'url(assets/img/news/4.jpg)',
                           }}
-                        ></div>
+                        />
                       </div>
                       {/* END IMAGE */}
 
