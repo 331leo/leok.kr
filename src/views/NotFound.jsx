@@ -11,17 +11,14 @@ const NotFound = () => {
               <img src="/assets/img/logo/dark.png" alt="brand" />
             </Link>
           </div>
-          {/* END LOGO */}
           <div className="copyright">
             <p>
               &copy; {new Date().getFullYear()} Leo Kim <br /> All Rights
               reserved
             </p>
           </div>
-          {/* END COPYRIGHT */}
         </div>
       </div>
-      {/* END LEFT PART */}
 
       <div className="rightpart">
         <div className="rightpart_in">
@@ -41,7 +38,6 @@ const NotFound = () => {
           </div>
         </div>
       </div>
-      {/* END RIGHT PART */}
 
       <footer className="footer-wrapper">
         <div className="copyright">
@@ -49,7 +45,6 @@ const NotFound = () => {
             &copy; {new Date().getFullYear()} Leo Kim <br />
           </p>
         </div>
-        {/* END COPYRIGHT */}
       </footer>
     </div>
   );

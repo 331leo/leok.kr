@@ -25,23 +25,17 @@ const Home = () => {
                 backgroundImage: `url(${profileUrl}`,
               }}
             />
-            {/* END AVATAR IMAGE */}
           </div>
-          {/* END AVATAR */}
           <div className="details">
             <h3 className="name">Leo Kim</h3>
             <p className="job">
               AKA. Donghyun Kim <br /> 세상을 바꾸는 프로그래머가 꿈인 평범한
               고등학생 개발자입니다 😄
             </p>
-            {/* END JOB */}
             <Social />
           </div>
-          {/* END DETAILS */}
         </div>
-        {/* END HOME CONTENT */}
       </div>
-      {/* END HOME */}
     </>
   );
 };

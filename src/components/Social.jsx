@@ -39,7 +39,6 @@ const Social = () => {
           </li>
         ))}
       </ul>
-      {/* END SOCIAL */}
     </>
   );
 };
