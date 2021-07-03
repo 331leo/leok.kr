@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import Brand from './Brand';
-import ReactMarkdown from 'react-markdown';
 Modal.setAppElement('#root');
 
 const About = () => {
