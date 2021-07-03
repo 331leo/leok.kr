@@ -97,17 +97,17 @@ const HomeView = () => {
                   <About />
                 </TabPanel>
                 {/* END ABOUT MENU TAB CONTENT */}
-
+                {/*
                 <TabPanel>
                   <Portfolio />
                 </TabPanel>
                 {/* END PORTFOLIO MENU TAB CONTENT */}
-
+                {/*
                 <TabPanel>
                   <News />
                 </TabPanel>
                 {/* END NEWS MENU TAB CONTENT */}
-
+                {/*
                 <TabPanel>
                   <Contact />
                 </TabPanel>
