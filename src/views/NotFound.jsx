@@ -28,7 +28,7 @@ const NotFound = () => {
                 <div className="tokyo_tm_error_inner">
                   <h1>404!</h1>
                   <h3>Not Found</h3>
-                  <p>이 페이지는 존재하지 않습니다. 홈으로 돌아가 주세요</p>
+                  <p>이 페이지는 존재하지 않습니다.</p>
                   <Link to="/" className="ib-button">
                     홈으로 돌아가기
                   </Link>
