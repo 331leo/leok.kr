@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import Home from '../components/Home';
 import About from '../components/About';
 
-const HomeView = () => {
+const HomeView = (props) => {
   return (
     <>
-      <Tabs>
+      <Tabs selectedIndex={props.tabIndex}>
         <TabList>
           <div className="leftpart">
             <div className="leftpart_inner">

@@ -10,7 +10,8 @@ const Routes = () => {
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           {/* <Route exact path="/" component={Preview} /> */}
-          <Route exact path="/" component={HomeView} />
+          <Route exact path="/"> <HomeView tabIndex={0} /> </Route>
+          <Route exact path="/about"><HomeView tabIndex={1}/></Route>
           <Route component={NotFound} />
         </Switch>
       </Router>
