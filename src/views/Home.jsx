@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Link } from 'react-router-dom';
 import Home from '../components/Home';
 import About from '../components/About';
 
 const HomeView = (props) => {
+  const [tabIndex, setTabIndex] = useState(props.tabIndex);
   return (
     <>
-      <Tabs selectedIndex={props.tabIndex}>
+      <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
         <TabList>
           <div className="leftpart">
             <div className="leftpart_inner">

@@ -14,10 +14,10 @@ const SocialShare = [
     iconName: 'instagram',
     link: 'https://www.instagram.com/k.dh05',
   },
-  {
-    iconName: 'idcard',
-    link: 'http://rocketpunch.com/@331leo',
-  },
+  // {
+  //   iconName: 'idcard',
+  //   link: 'http://rocketpunch.com/@331leo',
+  // },
   {
     iconName: 'email',
     link: 'mailto:me@leok.kr',
