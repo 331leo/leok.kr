@@ -21,16 +21,18 @@ const About = () => {
                     </strong>
                     <ul className="tabtab">
                       <li>소프트웨어 개발자</li>
-                      <li>2020/7 ~</li>
+                      <li>2020/7 ~ 2021/9</li>
                     </ul>
                   </li>
                   <li>
                     <strong>
-                      <a href="https://codefor.kr">코드 포 코리아</a>
+                      <a href="https://www.facebook.com/teamcrsd/posts/876325893025095">
+                        넷마블 마블 퓨처 레볼루션 X 팀 크레센도
+                      </a>
                     </strong>
                     <ul className="tabtab">
-                      <li>활동가</li>
-                      <li>2021/4 ~</li>
+                      <li>소프트웨어 개발자</li>
+                      <li>2021/6 ~ 2021/9</li>
                     </ul>
                   </li>
                   <li>
@@ -42,6 +44,15 @@ const About = () => {
                     <ul className="tabtab">
                       <li>System Software 국가대표</li>
                       <li>2020/10 ~ 2021/4</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>
+                      <a href="https://codefor.kr">코드 포 코리아</a>
+                    </strong>
+                    <ul className="tabtab">
+                      <li>활동가</li>
+                      <li>2021/4 ~</li>
                     </ul>
                   </li>
                 </ul>
