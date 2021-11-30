@@ -17,6 +17,15 @@ const About = () => {
                 <ul className="tab">
                   <li>
                     <strong>
+                      <a href="https://codefor.kr">코드 포 코리아</a>
+                    </strong>
+                    <ul className="tabtab">
+                      <li>활동가</li>
+                      <li>2021/4 ~</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>
                       <a href="https://crsd.team">팀 크레센도</a>
                     </strong>
                     <ul className="tabtab">
@@ -46,20 +55,18 @@ const About = () => {
                       <li>2020/10 ~ 2021/4</li>
                     </ul>
                   </li>
-                  <li>
-                    <strong>
-                      <a href="https://codefor.kr">코드 포 코리아</a>
-                    </strong>
-                    <ul className="tabtab">
-                      <li>활동가</li>
-                      <li>2021/4 ~</li>
-                    </ul>
-                  </li>
                 </ul>
               </div>
               <div className="category">
                 <h4>수상</h4>
                 <ul className="tab">
+                  <li>
+                    <strong>국제과학경진대회 한국대표 선발대회</strong>
+                    <ul className="tabtab">
+                      <li>과학창의재단 이사장 금상</li>
+                      <li>2021/3</li>
+                    </ul>
+                  </li>
                   <li>
                     <strong>
                       <a href="https://www.msit.go.kr/">
@@ -72,10 +79,14 @@ const About = () => {
                     </ul>
                   </li>
                   <li>
-                    <strong>국제과학경진대회 한국대표 선발대회</strong>
+                    <strong>
+                      <a href="https://sunrint.hs.kr">
+                        한국교육개발원 영재교육연구센터
+                      </a>
+                    </strong>
                     <ul className="tabtab">
-                      <li>과학창의재단 이사장 금상</li>
-                      <li>2021/3</li>
+                      <li>서울특별시교육청 우수영재상</li>
+                      <li>2019/11</li>
                     </ul>
                   </li>
                   <li>
