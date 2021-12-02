@@ -3,9 +3,13 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Link } from 'react-router-dom';
 import Home from '../components/Home';
 import About from '../components/About';
+import ReactGA from 'react-ga';
 
 const HomeView = (props) => {
   const [tabIndex, setTabIndex] = useState(props.tabIndex);
+  ReactGA.initialize(process.env.REACT_APP_GA);
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <>
       <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
@@ -42,7 +46,9 @@ const HomeView = (props) => {
 
               <div className="copyright">
                 <p>
-                  &copy; {new Date().getFullYear()} Leo Kim <br />
+                  &copy; {new Date().getFullYear()} Leo Kim{' '}
+                  {process.env.HOMEPAGE_GA}
+                  <br />
                 </p>
               </div>
             </div>
