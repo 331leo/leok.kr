@@ -61,18 +61,24 @@ const About = () => {
                 <h4>수상</h4>
                 <ul className="tab">
                   <li>
-                    <strong>한국코드페어</strong>
+                    <strong>
+                      <a href="https://www.kcf.or.kr/">한국코드페어</a>
+                    </strong>
                     <ul className="tabtab">
                       <li>한국정보화진흥원장 은상</li>
                       <li>2022/11</li>
                     </ul>
                   </li>
                   <li>
-                    <strong>한국정보통신학회 추계종합학술대회</strong>
+                    <strong>
+                      <a href="http://kiice.org">
+                        한국정보통신학회 추계종합학술대회
+                      </a>
+                    </strong>
                     <ul className="tabtab">
+                      {/* prettier-ignore */}
                       <li>
-                        학생우수논문상 (만료된 도메인의 전자우편을 통한 개인정보
-                        유출에 관한 연구)
+                        만료된 도메인의 전자우편을 통한 개인정보 유출에 관한 연구 학생우수논문상
                       </li>
                       <li>2022/10</li>
                     </ul>
