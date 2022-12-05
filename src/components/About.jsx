@@ -35,8 +35,9 @@ const About = () => {
                   </li>
                   <li>
                     <strong>
-                      <a href="https://www.facebook.com/teamcrsd/posts/876325893025095">
-                        넷마블 마블 퓨처 레볼루션 X 팀 크레센도
+                      {/*<a href="https://www.facebook.com/teamcrsd/posts/876325893025095">*/}
+                      <a href="https://www.marvelfuturerevolution.com/ko">
+                        넷마블 마블 퓨처 레볼루션
                       </a>
                     </strong>
                     <ul className="tabtab">
@@ -78,7 +79,7 @@ const About = () => {
                     <ul className="tabtab">
                       {/* prettier-ignore */}
                       <li>
-                        만료된 도메인의 전자우편을 통한 개인정보 유출에 관한 연구 학생우수논문상
+                        <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11161488&language=ko_KR&hasTopBanner=true" >만료된 도메인의 전자우편을 통한 개인정보 유출에 관한 연구 학생우수논문상</a>
                       </li>
                       <li>2022/10</li>
                     </ul>
