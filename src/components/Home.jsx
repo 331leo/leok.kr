@@ -4,7 +4,8 @@ import getProfilePic from '../utils/facebook';
 const Home = () => {
   const [profileUrl, setProfileUrl] = React.useState('');
   React.useEffect(async () => {
-    setProfileUrl(await getProfilePic(1203990983569928));
+  /*  setProfileUrl(await getProfilePic(1203990983569928));*/
+    setProfileUrl("https://pb.leok.kr/IMG_3276.jpeg");
   }, []);
 
   return (
