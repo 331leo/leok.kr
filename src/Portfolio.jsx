@@ -3,8 +3,7 @@ import { useState, useEffect } from 'react';
 const PROFILE_IMAGE =
   import.meta.env.VITE_PROFILE_IMAGE || 'https://pb.leok.kr/image0%202.jpg';
 
-// 레이어블 홈페이지 주소로 변경하세요
-const LAYABLE_URL = 'https://layable.kr';
+
 
 const IconGithub = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -38,7 +37,7 @@ const IconExternal = () => (
 const experiences = [
   {
     company: '주식회사 레이어블',
-    companyUrl: LAYABLE_URL,
+    companyUrl: 'https://layable.kr',
     period: '2024.07 — 재직중',
     role: 'Co-Founder · SW Developer',
     desc: '모든 창작자를 위한 3D 굿즈 파트너, 레이어블의 공동창업자로서 상품 제조의 새로운 방식을 만들어가고 있습니다.',
@@ -137,22 +136,22 @@ const timeline = [
     date: '2018.11',
     title: '선린인터넷고등학교 SW영재원 금상',
     org: '선린인터넷고등학교',
-    desc: 'SW영재원 산출물 경진대회 금상(1위) 수상.',
+    desc: 'SW영재원 산출물 경진대회에서 금상(1위)을 수상하였습니다.',
   },
 ];
 
 const education = [
   {
     school: '한양대학교',
-    major: 'ERICA 캠퍼스 컴퓨터학부',
+    major: 'ERICA 컴퓨터학부',
     period: '2026.03 — 재학중',
-    url: null,
+    url: "https://hanyang.ac.kr/",
   },
   {
     school: '순천향대학교',
     major: '컴퓨터소프트웨어공학과',
     period: '2024.03 — 2026.02',
-    url: null,
+    url: "https://sch.ac.kr/",
   },
   {
     school: '현대고등학교',
