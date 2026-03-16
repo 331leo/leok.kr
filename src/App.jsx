@@ -1,12 +1,6 @@
 import React from 'react';
-import Routes from './router/Routes';
+import Portfolio from './Portfolio';
 
-const App = () => {
-  return (
-    <div className="tokyo_tm_all_wrap">
-      <Routes />
-    </div>
-  );
-};
+const App = () => <Portfolio />;
 
 export default App;

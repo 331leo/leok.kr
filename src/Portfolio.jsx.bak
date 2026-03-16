@@ -1,0 +1,315 @@
+import { useState, useEffect } from 'react';
+
+const PROFILE_IMAGE =
+  import.meta.env.VITE_PROFILE_IMAGE || 'https://pb.leok.kr/image0%202.jpg';
+
+// 레이어블 홈페이지 주소로 변경하세요
+const LAYABLE_URL = 'https://layable.kr';
+
+const IconGithub = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+  </svg>
+);
+
+const IconInstagram = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+  </svg>
+);
+
+const IconMail = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect x="2" y="4" width="20" height="16" rx="2" />
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+  </svg>
+);
+
+const IconExternal = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    <polyline points="15 3 21 3 21 9" />
+    <line x1="10" y1="14" x2="21" y2="3" />
+  </svg>
+);
+
+// ── Data ────────────────────────────────────────
+
+const experiences = [
+  {
+    company: '주식회사 레이어블',
+    companyUrl: LAYABLE_URL,
+    period: '2024.07 — 재직중',
+    role: 'Co-Founder · SW Developer',
+    desc: '모든 창작자를 위한 3D 굿즈 파트너, 레이어블의 공동창업자로서 상품 제조의 새로운 방식을 만들어가고 있습니다.',
+    projects: [
+      {
+        name: 'Layable 3D Make',
+        desc: '3D 프린팅 자동견적 시스템과 주문관리 플랫폼을 개발하여, 경쟁사에서 별도 문의를 통해서만 견적, 주문할 수 있었던 3D 프린팅 생산의뢰를 자동화 하여 고객 편의성을 크게 향상시켰습니다.',
+        url: 'https://3dmake.layable.kr',
+      },
+      {
+        name: 'Layable Shop',
+        desc: '풀필먼트사 연동 및 회원구분 별 상품 기능을 갖춘 자사몰 솔루션을 개발하였습니다.',
+        url: 'https://shop.layable.kr',
+      },
+      {
+        name: 'Layable Admin',
+        desc: '주문관리, 생산자동화, 출고관리, 상품관리, 유저관리, 단가설정 등 레이어블의 내부 운영을 위한 통합 어드민 페이지를 개발하였습니다.',
+      }
+    ],
+  },
+  {
+    company: '레오케이서비스',
+    companyUrl: null,
+    period: '2021.06 - 운영중',
+    role: 'SW Developer (Freelance)',
+    desc: '프리렌서 작업을 위한 개인사업자로, 다양한 클라이언트의 요구사항에 맞춰 웹 서비스, 디스코드 봇, 내부 관리 도구 등을 개발하였습니다.',
+    projects: [
+      {
+        name: '어비셜 항공우주 홈페이지 및 IT 인프라 구축',
+        url: 'https://comm-abyssal.vercel.app',
+        desc: '어비셜 항공우주의 공식 홈페이지를 개발하고, IT 인프라를 구축하여 안정적인 운영을 지원했습니다.',
+      },
+      {
+        name: '크시(Xsi) 디스코드 봇 개발자',
+        url: 'https://team-crescendo.me',
+        desc: '디스코드 봇 개발 팀 크레센도에서 100,000개 이상 서버에서 이용중인 인기 디스코드 봇 크시(Xsi) 개발자로 활동했습니다.',
+      },
+      {
+        name: '넷마블 마블 퓨처 레볼류션 커뮤니티 관리 솔루션 개발',
+        desc: '넷마블 자회사인 IGS의 의뢰로 수십만 명 규모의 마블 퓨처 레볼류션 디스코드 커뮤니티 관리 시스템, 미니게임 시스템, 모더레이션 어드민 페이지를 개발했습니다.',
+      }
+    ],
+  },
+];
+
+// 역순 (최신→과거)
+const timeline = [
+  {
+    date: '2023.05',
+    kind: 'activity',
+    title: '국제과학기술경진대회(ISEF) 2023 국가대표',
+    org: 'System Software Finalist, 한국과학창의재단',
+    orgUrl: 'https://www.societyforscience.org/isef/',
+    desc: '한국코드페어에서의 우수한 성적으로 국제과학기술경진대회(ISEF)의 System Software 분야 국가대표로 선발되어 출전하였습니다.',
+  },
+  {
+    date: '2022.11',
+    title: '한국코드페어 SW 우수인재상',
+    org: '한국정보화진흥원',
+    desc: '과학기술정보통신부와 한국정보화진흥원이 주최하는 국내 최대 규모의 SW 공모 경진대회인 한국코드페어에서 은상을 수상하였습니다.',
+  },
+  {
+    date: '2022.10',
+    title: '한국정보통신학회 학생우수논문상',
+    org: '한국정보통신학회',
+    orgUrl: 'http://kiice.org',
+    desc: '「만료된 도메인의 전자우편을 통한 개인정보 유출에 관한 연구」를 제1저자로 투고하여 학생우수논문상을 수상하였습니다.',
+    link: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11161488',
+  },
+  {
+    date: '2021.04',
+    title: '코드포코리아 Internal Service 개발',
+    org: 'Code for Korea',
+    orgUrl: 'https://codefor.kr',
+    desc: '코로나19 시기 마스크 지도로 큰 관심을 끌었던 시빅해킹 커뮤니티 Code for Korea에서 인터널 Slack 봇과 구성원 계정 관리 시스템을 개발해 수기 운영 업무를 자동화했습니다.',
+  },
+  {
+    date: '2021.03',
+    title: '국제과학기술경진대회(ISEF) 2021 국가대표 선발',
+    org: '한국과학창의재단',
+    desc: 'System Software 분야 국가대표로 선발되어 2021 ISEF에 출전했습니다.',
+  },
+  {
+    date: '2020.12',
+    title: '전국 SW영재교육 산출물 경진대회 금상',
+    org: '과학기술정보통신부',
+    desc: '과학기술정보통신부가 주최하는 전국 SW영재교육 산출물 경진대회에서 금상을 수상하였습니다.',
+  },
+  {
+    date: '2019.11',
+    title: '서울특별시교육청 우수영재상',
+    org: '한국교육개발원 영재교육연구센터',
+    desc: '서울특별시교육청 영재원교육연구센터에서 우수영재상을 수상하였습니다.',
+  },
+  {
+    date: '2018.11',
+    title: '선린인터넷고등학교 SW영재원 금상',
+    org: '선린인터넷고등학교',
+    desc: 'SW영재원 산출물 경진대회 금상(1위) 수상.',
+  },
+];
+
+const education = [
+  {
+    school: '한양대학교',
+    major: 'ERICA 캠퍼스 컴퓨터학부',
+    period: '2026.03 — 재학중',
+    url: null,
+  },
+  {
+    school: '순천향대학교',
+    major: '컴퓨터소프트웨어공학과',
+    period: '2024.03 — 2026.02',
+    url: null,
+  },
+  {
+    school: '현대고등학교',
+    major: '37기',
+    period: '2021.03 — 2024.02',
+    url: 'https://hyundai.hs.kr',
+  },
+];
+
+// ── Component ───────────────────────────────────
+
+const Portfolio = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <div className="pf">
+      <div className={`pf-nav-bg${scrolled ? ' pf-nav-bg--scrolled' : ''}`} aria-hidden="true" />
+
+      {/* ── NAV: 로고만 ── */}
+      <header className="pf-nav">
+        <a href="#top" className="pf-nav__logo">
+          <img src="/assets/img/logo/light.png" alt="LeoK" className="pf-nav__logo-img" />
+        </a>
+      </header>
+
+      <main className="pf-main" id="top">
+
+        {/* ── HERO ── */}
+        <section className="pf-hero">
+          <div className="pf-hero__text">
+            <span className="pf-hero__greeting">안녕하세요, 저는</span>
+            <h1 className="pf-hero__name">
+              김동현<span className="pf-hero__imnida">입니다.</span>
+            </h1>
+            <p className="pf-hero__name-en">Donghyun Kim <br/><p style={{ fontSize: '0.7em', fontWeight: 'normal' }}>(Aka. Leo Kim)</p></p>
+            <p className="pf-hero__tagline" style={{ fontStyle: 'italic' }}>
+              SW 기술로 세상에 작지만 의미 있는 변화를 만듭니다. 😄
+            </p>
+            <div className="pf-social">
+              <a href="mailto:me@leok.kr" className="pf-social__item">
+                <IconMail />
+                <span>me@leok.kr</span>
+              </a>
+              <a href="https://github.com/331leo" target="_blank" rel="noreferrer" className="pf-social__item">
+                <IconGithub />
+                <span>github.com/331leo</span>
+              </a>
+              <a href="https://www.instagram.com/k.dh05" target="_blank" rel="noreferrer" className="pf-social__item">
+                <IconInstagram />
+                <span>@k.dh05</span>
+              </a>
+            </div>
+          </div>
+          <div className="pf-hero__img-wrap">
+            <img src={PROFILE_IMAGE} alt="김동현 프로필" className="pf-hero__img" />
+          </div>
+        </section>
+
+        {/* ── EXPERIENCE ── */}
+        <section className="pf-section" id="experience">
+          <span className="pf-label">경력</span>
+          <h2 className="pf-section__title">Work Experience</h2>
+          {experiences.map((exp) => (
+            <div className="pf-exp" key={exp.company}>
+              <div className="pf-exp__left">
+                {exp.companyUrl
+                  ? <a href={exp.companyUrl} target="_blank" rel="noreferrer" className="pf-exp__company">{exp.company}<IconExternal /></a>
+                  : <span className="pf-exp__company">{exp.company}</span>
+                }
+                <span className="pf-exp__period">{exp.period}</span>
+                <span className="pf-exp__role">{exp.role}</span>
+                {exp.desc && <p className="pf-exp__desc">{exp.desc}</p>}
+              </div>
+              <div className="pf-exp__right">
+                {exp.projects.map((proj) => (
+                  <div className="pf-project" key={proj.name}>
+                    {proj.url
+                      ? <a href={proj.url} target="_blank" rel="noreferrer" className="pf-project__name pf-project__name--link">{proj.name} <IconExternal /></a>
+                      : proj.name && <h3 className="pf-project__name">{proj.name}</h3>
+                    }
+                    {proj.desc && <p className="pf-project__desc">{proj.desc}</p>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </section>
+
+        <div className="pf-divider" />
+
+        {/* ── AWARDS ── */}
+        <section className="pf-section" id="awards">
+          <span className="pf-label">활동 &amp; 수상</span>
+          <h2 className="pf-section__title">Awards &amp; Activities</h2>
+          <div className="pf-awards">
+            {timeline.map((item) => (
+              <div className={`pf-award pf-award--${item.kind}`} key={item.title + item.date}>
+                <div className="pf-award__meta">
+                  <span className="pf-award__date">{item.date}</span>
+                  {item.kind === 'award' && <span className="pf-award__badge">수상</span>}
+                </div>
+                {item.link
+                  ? <a href={item.link} target="_blank" rel="noreferrer" className="pf-award__title pf-award__title--link">{item.title} <IconExternal /></a>
+                  : <h3 className="pf-award__title">{item.title}</h3>
+                }
+                {item.org && (
+                  <span className="pf-award__org">
+                    {item.orgUrl
+                      ? <a href={item.orgUrl} target="_blank" rel="noreferrer">{item.org}</a>
+                      : item.org}
+                  </span>
+                )}
+                <p className="pf-award__desc">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <div className="pf-divider" />
+
+        {/* ── EDUCATION ── */}
+        <section className="pf-section" id="education">
+          <span className="pf-label">학력</span>
+          <h2 className="pf-section__title">Education</h2>
+          <div className="pf-edu-list">
+            {education.map((e) => (
+              <div className="pf-edu" key={e.school}>
+                <span className="pf-edu__period">{e.period}</span>
+                <div className="pf-edu__info">
+                  {e.url
+                    ? <a href={e.url} target="_blank" rel="noreferrer" className="pf-edu__school">{e.school}</a>
+                    : <strong className="pf-edu__school">{e.school}</strong>}
+                  <span className="pf-edu__major">{e.major}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+
+      </main>
+
+      {/* ── FOOTER ── */}
+      <footer className="pf-footer">
+        <p>
+          © {new Date().getFullYear()} Donghyun Kim &nbsp;·&nbsp;{' '}
+          <a href="mailto:me@leok.kr">me@leok.kr</a>
+        </p>
+      </footer>
+    </div>
+  );
+};
+
+export default Portfolio;
